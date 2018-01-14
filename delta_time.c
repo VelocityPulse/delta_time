@@ -16,9 +16,9 @@ void	get_delta(t_delta *d, const int fps_mode)
 {
 	static double		timer = 0;
 
-	d->elipsed_time = (d->t2.tv_sec - d->t1.tv_sec) * 1000;
-	d->elipsed_time += (d->t2.tv_usec - d->t1.tv_usec) / 1000;
-	d->dt = d->elipsed_time / 1000;
+	d->elapsed_time = (d->t2.tv_sec - d->t1.tv_sec) * 1000;
+	d->elapsed_time += (d->t2.tv_usec - d->t1.tv_usec) / 1000;
+	d->dt = d->elapsed_time / 1000;
 	d->fps = 1 / d->dt;
 	if (fps_mode)
 	{
