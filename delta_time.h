@@ -21,7 +21,7 @@ typedef struct	s_delta
 	double			dt;
 	struct timeval	t1;
 	struct timeval	t2;
-	double			elipsed_time;
+	double			elapsed_time;
 	double			fps;
 }				t_delta;
 
